@@ -412,7 +412,7 @@ img {
   }
 }
 
-/* ==============HERO============== */
+/* ==============/HERO============== */
 
 /* ============== SECTION-1 ADVANTAGES ============== */
 
@@ -532,11 +532,46 @@ img {
   }
 }
 
-/* ============== SECTION-1 ADVANTAGES ============== */
+/* ============== /SECTION-1 ADVANTAGES ============== */
 
 /* ============== SECTION-2 examples ============== */
 
-/* .our-works {
+@media screen and (max-width: 1199px) {
+  .examples {
+    display: none;
+  }
+}
+
+/* =========Dekstop========= */
+@media screen and (min-width: 1200px) {
+  .our-works {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-text-color);
+    margin-bottom: 72px;
+  }
+
+  .list-work {
+    display: flex;
+  }
+
+  .item-work:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+/* ============== SECTION-2 examples ============== */
+
+/* ============== SECTION-3 team ============== */
+
+.team {
+  background: #f4f4fd;
+}
+.our-team {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
@@ -547,17 +582,60 @@ img {
   margin-bottom: 72px;
 }
 
-.list-work {
-  display: flex;
+.list-team {
 }
 
-.item-work:not(:last-child) {
-  margin-right: 24px;
-} */
+.item-team {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 
-/* ============== SECTION-2 examples ============== */
+.position-team {
+  padding: 32px 16px;
+}
 
-/* ============== SECTION-3 team ============== */
+.team-member {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-text-color);
+  margin-bottom: var(--h2-margin-bottom);
+}
+.position-member {
+  font-size: var(--dominant-type-font-size);
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--p-text-color);
+  margin-bottom: var(--h2-margin-bottom);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--hover-focus-color);
+}
 
 /* .team {
   background: #f4f4fd;
