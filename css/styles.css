@@ -967,7 +967,7 @@ img {
 
 /* ============== PORTFOLIO ============== */
 
-/* .portfolio {
+.portfolio {
   padding-left: 0;
   padding-right: 0;
 }
@@ -996,9 +996,9 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .button-item:hover,
+.button-item:hover,
 .button-item:focus {
   background-color: var(--hover-focus-color);
   color: var(--hover-text-button-color);
@@ -1081,13 +1081,13 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   gap: 24px;
   width: 360px;
-} */
+}
 
 /* ============== /PORTFOLIO ============== */
 
 /*===================Modal===================*/
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
