@@ -123,6 +123,10 @@ img {
     justify-content: space-between;
   }
 
+  .is-hidden {
+    display: none;
+  }
+
   .mobile-menu-close {
     position: absolute;
     top: 40px;
