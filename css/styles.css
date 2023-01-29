@@ -55,6 +55,13 @@ img {
 /* =================/components================ */
 
 /* ==================HEADER=================== */
+/* ----Mobile Menu----- */
+@media screen and (min-width: 0px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/* ----Mobile Menu----- */
 
 /* =======Mobile====== */
 
@@ -263,6 +270,10 @@ img {
     display: block;
     margin-left: auto;
     line-height: 0;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   .mobile-menu-open {
