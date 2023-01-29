@@ -1085,7 +1085,7 @@ img {
 
 /* ============== /PORTFOLIO ============== */
 
-/*===================Modal===================*/
+/*=================== Backdrop ===================*/
 
 .backdrop {
   position: fixed;
@@ -1122,6 +1122,23 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+/* ===========Mobile-Modal========== */
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 393px) and (max-width: 480px) {
+  .modal {
+    width: 392px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/* ===========/Mobile-Modal========== */
 
 .modal-close {
   position: absolute;
@@ -1155,11 +1172,11 @@ img {
   fill: #ffffff;
 }
 
-/*=================== /Modal===================*/
+/*=================== /Backdrop ===================*/
 
 /*=================== Modal-Form ===================*/
 
-/* .leave-contacts {
+.leave-contacts {
   font-style: normal;
   font-weight: 500;
   font-size: var(--dominant-type-font-size);
@@ -1309,6 +1326,6 @@ img {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--hover-focus-color);
-} */
+}
 
 /*=================== /Modal-Form ===================*/
