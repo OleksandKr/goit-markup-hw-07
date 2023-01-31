@@ -1257,7 +1257,19 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+
 /* ===========Mobile-Modal========== */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .backdrop {
+    overflow: scroll;
+  }
+
+  .modal {
+    top: 50px;
+    transform: translate(-50%) scale(1);
+  }
+}
+
 @media screen and (max-width: 392px) {
   .modal {
     width: 100%;
